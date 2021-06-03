@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+
+    <import resource="applicationContext-service.xml"></import>
+
+
+
+    <!-- 默认scope 是 singleton-->
+    <!--    <bean id="userDao" init-method="init" destroy-method="destory" scope="singleton"-->
+    <!--          class="com.yg.dao.impl.UserDaoImpl">-->
+    <!--        <property name="username" value="wanganshi1"></property>-->
+    <!--        <property name="age" value="181"></property>-->
+    <!--    </bean>-->
+    <!--    <bean id="userDao" scope="singleton" class="com.yg.factory.StaticFactory" factory-method="getUserDao">-->
+    <!--    </bean>-->
+    <!--    <bean id="factory" class="com.yg.factory.DynamicFactory"></bean>-->
+    <!--    <bean id="userDao" factory-bean="factory" factory-method="getUserDao">-->
+    <!--        <property name="username" value="wanganshi"></property>-->
+    <!--        <property name="age" value="18"></property>-->
+    <!--    </bean>-->
+
+
+
+    <!--    <bean id="userService" class="com.yg.service.impl.UserServiceImpl">-->
+    <!--        <property name="userDao" ref="userDao"></property>-->
+    <!--    </bean>-->
+    <!--    <bean id="userService" class="com.yg.service.impl.UserServiceImpl" p:userDao-ref="userDao"></bean>-->
+    <bean id="userService" class="com.yg.service.impl.UserServiceImpl">
+        <constructor-arg name="userDao" ref="userDao"></constructor-arg>
+    </bean>
+    <bean id="userService2" class="com.yg.service.impl.UserServiceImpl">
+        <constructor-arg name="userDao" ref="userDao"></constructor-arg>
+    </bean>
+</beans>

@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+    <import resource="applicationContext-mvc.xml"></import>
+
+    <bean id="userDao" class="com.yg.dao.impl.UserDaoImpl">
+        <property name="list">
+            <list>
+                <value>aaaa</value>
+                <value>bbb</value>
+                <value>ccc</value>
+                <value>dddd</value>
+            </list>
+        </property>
+        <property name="map">
+            <map>
+                <entry key="u1" value-ref="user1"></entry>
+                <entry key="u2" value-ref="user2"></entry>
+            </map>
+        </property>
+        <property name="properties">
+            <props>
+                <prop key="p1">pp1</prop>
+                <prop key="p2">pp2</prop>
+                <prop key="p3">pp3</prop>
+            </props>
+        </property>
+    </bean>
+
+</beans>
