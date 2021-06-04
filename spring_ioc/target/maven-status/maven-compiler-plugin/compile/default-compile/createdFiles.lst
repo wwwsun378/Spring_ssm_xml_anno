@@ -1,2 +1,8 @@
 com\yg\dao\impl\UserDaoImpl.class
+com\yg\service\UserService.class
+com\yg\controller\UserController.class
+com\yg\factory\DynamicFactory.class
+com\yg\factory\StaticFactory.class
+com\yg\domain\User.class
 com\yg\dao\UserDao.class
+com\yg\service\impl\UserServiceImpl.class

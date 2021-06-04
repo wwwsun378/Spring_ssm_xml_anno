@@ -1,2 +1,8 @@
+D:\IdeaProjects\Spring\spring_ioc\src\main\java\com\yg\factory\DynamicFactory.java
+D:\IdeaProjects\Spring\spring_ioc\src\main\java\com\yg\factory\StaticFactory.java
 D:\IdeaProjects\Spring\spring_ioc\src\main\java\com\yg\dao\UserDao.java
+D:\IdeaProjects\Spring\spring_ioc\src\main\java\com\yg\domain\User.java
+D:\IdeaProjects\Spring\spring_ioc\src\main\java\com\yg\controller\UserController.java
+D:\IdeaProjects\Spring\spring_ioc\src\main\java\com\yg\service\impl\UserServiceImpl.java
 D:\IdeaProjects\Spring\spring_ioc\src\main\java\com\yg\dao\impl\UserDaoImpl.java
+D:\IdeaProjects\Spring\spring_ioc\src\main\java\com\yg\service\UserService.java
