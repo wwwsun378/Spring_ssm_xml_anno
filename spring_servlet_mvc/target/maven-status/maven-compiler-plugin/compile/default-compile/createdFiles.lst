@@ -1,0 +1,13 @@
+com\yg\dao\impl\UserDaoImpl.class
+com\yg\config\DataSourceConfig.class
+com\yg\service\UserService.class
+com\yg\controller\UserServlet.class
+com\yg\factory\DynamicFactory.class
+com\yg\factory\StaticFactory.class
+com\yg\domain\User.class
+com\yg\controller\UserController.class
+com\yg\utils\WebApplicationContextUtils.class
+com\yg\listener\MyServletContextListener.class
+com\yg\dao\UserDao.class
+com\yg\config\SpringConfiguration.class
+com\yg\service\impl\UserServiceImpl.class
