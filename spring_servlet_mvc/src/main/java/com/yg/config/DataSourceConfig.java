@@ -3,6 +3,7 @@ package com.yg.config;
 import com.mchange.v2.c3p0.ComboPooledDataSource;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.context.annotation.Bean;
+import org.springframework.context.annotation.Configuration;
 import org.springframework.context.annotation.PropertySource;
 
 import javax.sql.DataSource;
@@ -16,6 +17,7 @@ import java.sql.SQLException;
  * @Date 2021/6/4 22:35
  */
 @PropertySource(value = "classpath:jdbc.properties")
+//@Configuration
 public class DataSourceConfig {
     @Value("${jdbc.driver}")
     private String driver;

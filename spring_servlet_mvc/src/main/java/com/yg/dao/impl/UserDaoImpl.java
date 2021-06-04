@@ -16,7 +16,7 @@ import java.util.Properties;
  * @Date 2021/6/4 1:08
  */
 @Repository(value = "userDao")
-@PropertySource("classpath:jdbc.properties")
+//@PropertySource("classpath:jdbc.properties")
 public class UserDaoImpl implements UserDao {
 
 

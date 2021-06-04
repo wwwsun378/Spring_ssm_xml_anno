@@ -17,9 +17,9 @@
     </listener>
 
     <!-- ?? web 应用启动的时候 初始化spring 应用上下文。 -->
-    <listener>
-        <listener-class>com.yg.listener.MyServletContextListener</listener-class>
-    </listener>
+<!--    <listener>-->
+<!--        <listener-class>com.yg.listener.MyServletContextListener</listener-class>-->
+<!--    </listener>-->
 
     <servlet>
         <servlet-name>userServlet</servlet-name>

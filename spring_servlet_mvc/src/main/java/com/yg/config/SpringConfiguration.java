@@ -10,10 +10,10 @@ import org.springframework.context.annotation.Import;
  * @Date 2021/6/4 22:25
  */
 //引入数据源配置文件
-//@Import({DataSourceConfig.class})
+@Import({DataSourceConfig.class})
 @Configuration
 //    <context:component-scan base-package="com.yg"></context:component-scan>
-//@ComponentScan(basePackages = "com.yg")
+@ComponentScan(basePackages = "com.yg")
 public class SpringConfiguration {
 
 }
