@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:mvc="http://www.springframework.org/schema/mvc"
+       xmlns:context="http://www.springframework.org/schema/context"
+       xsi:schemaLocation="
+                        http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd
+                        http://www.springframework.org/schema/mvc http://www.springframework.org/schema/mvc/spring-mvc.xsd
+                        http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context.xsd">
+    <!--controller 组件扫描-->
+    <context:component-scan base-package="com.yg">
+        <context:include-filter type="annotation" expression="org.springframework.stereotype.Controller"/>
+    </context:component-scan>
+
+
+    <!--视图解析器-->
+    <bean id="viewResolver" class="org.springframework.web.servlet.view.InternalResourceViewResolver">
+        <property name="prefix" value="/WEB-INF/jsp/"></property>
+        <property name="suffix" value=".jsp"></property>
+    </bean>
+
+
+    <!--配置处理器映射器 ，mvc 返回对象，转为json返回-->
+    <!--    <bean id="RequestMappingHandlerAdapter"-->
+    <!--          class="org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter">-->
+    <!--        <property name="messageConverters">-->
+    <!--            <list>-->
+    <!--                <bean class="org.springframework.http.converter.json.MappingJackson2HttpMessageConverter"></bean>-->
+    <!--            </list>-->
+    <!--        </property>-->
+    <!--    </bean>-->
+    <!--    mvc.驱动 帮我们配置了 处理器映射器  处理器适配器  视图解析器  -->
+    <mvc:annotation-driven conversion-service="myDateConverterService"></mvc:annotation-driven>
+
+
+    <!--开放资源的访问-->
+    <!--    <mvc:resources mapping="/js/**" location="/js/"></mvc:resources>-->
+    <!--    <mvc:resources mapping="/img/**" location="/img/"/>-->
+    <!--交给tomcat 找原始的静态资源-->
+    <mvc:default-servlet-handler></mvc:default-servlet-handler>
+
+
+    <!--    声明日期转换器-->
+    <bean id="myDateConverterService" class="org.springframework.context.support.ConversionServiceFactoryBean">
+        <property name="converters">
+            <set>
+                <bean class="com.yg.converter.DateConverter"></bean>
+            </set>
+        </property>
+    </bean>
+
+
+    <!--配置文件上传解析器-->
+<!--    <bean id="multipartResolver" class="org.springframework.web.multipart.commons.CommonsMultipartResolver">-->
+<!--        <property name="defaultEncoding" value="UYF-8"/>-->
+<!--        <property name="maxUploadSize" value="500000"/>-->
+<!--    </bean>-->
+
+    <bean id="multipartResolver" class="org.springframework.web.multipart.commons.CommonsMultipartResolver">
+        <!--上传文件总大小-->
+        <property name="maxUploadSize" value="5242800"/>    <!--上传单个文件的大小-->
+        <property name="maxUploadSizePerFile" value="5242800"/>    <!--上传文件的编码类型-->
+        <property name="defaultEncoding" value="UTF-8"/>
+    </bean>
+
+</beans>

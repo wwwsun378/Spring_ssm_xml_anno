@@ -1,4 +1,4 @@
-package com.yg.controller;
+package com.yg.servlet;
 
 import com.yg.service.UserService;
 import org.springframework.beans.factory.annotation.Autowired;
