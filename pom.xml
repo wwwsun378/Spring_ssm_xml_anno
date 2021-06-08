@@ -13,6 +13,11 @@
         <module>spring_ioc_anno</module>
         <module>spring_servlet_mvc</module>
         <module>spring_jdbc</module>
+        <module>spring_test_demo</module>
+        <module>spring_aop</module>
+        <module>spring_transation</module>
+        <module>srping_mybatis_quick</module>
+
     </modules>
 
     <properties>
