@@ -17,6 +17,8 @@
         <module>spring_aop</module>
         <module>spring_transation</module>
         <module>srping_mybatis_quick</module>
+        <module>srping_mybatis_multi</module>
+        <module>spring_mybatis_anno</module>
 
     </modules>
 

@@ -6,11 +6,13 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
+        <module name="spring_mybatis_anno" />
         <module name="spring_jdbc" />
         <module name="spring_transation" />
         <module name="spring_ioc" />
         <module name="srping_mybatis_quick" />
         <module name="spring_test_demo" />
+        <module name="srping_mybatis_multi" />
         <module name="spring_ioc_anno" />
         <module name="spring_servlet_mvc" />
         <module name="spring_aop" />

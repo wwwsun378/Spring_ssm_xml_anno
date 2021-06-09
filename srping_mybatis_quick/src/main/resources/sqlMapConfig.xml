@@ -9,6 +9,16 @@
     <typeAliases>
         <typeAlias type="com.yg.domain.User" alias="user"></typeAlias>
     </typeAliases>
+    <!--自动逸类型处理器-->
+    <typeHandlers>
+        <typeHandler handler="com.yg.handler.DataTypeHandler"></typeHandler>
+    </typeHandlers>
+    <!--配置分页助手插件-->
+    <plugins>
+        <plugin interceptor="com.github.pagehelper.PageHelper">
+            <property name="dialect" value="mysql"/>
+        </plugin>
+    </plugins>
 
     <!--数据源环境-->
     <environments default="developement">
@@ -22,7 +32,7 @@
             </dataSource>
         </environment>
     </environments>
-    
+
 
     <!--加载映射文件-->
     <mappers>

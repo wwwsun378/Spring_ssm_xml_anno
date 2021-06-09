@@ -1,5 +1,7 @@
 package com.yg.domain;
 
+import java.util.Date;
+
 /**
  * @Description: TODO(这里用一句话描述这个类的作用)
  * @Author yg
@@ -10,6 +12,16 @@ public class User {
     private int id;
     private String username;
     private String password;
+
+    private Date birthday;
+
+    public Date getBirthday() {
+        return birthday;
+    }
+
+    public void setBirthday(Date birthday) {
+        this.birthday = birthday;
+    }
 
     public int getId() {
         return id;

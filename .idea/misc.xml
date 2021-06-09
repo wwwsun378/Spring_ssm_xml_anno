@@ -5,23 +5,20 @@
     <file type="web" url="file://$PROJECT_DIR$/spring_aop" />
     <file type="web" url="file://$PROJECT_DIR$/spring_ioc" />
     <file type="web" url="file://$PROJECT_DIR$/spring_mvc" />
+    <file type="web" url="file://$PROJECT_DIR$/spring_mybatis_anno" />
     <file type="web" url="file://$PROJECT_DIR$/spring_servlet_mvc" />
     <file type="web" url="file://$PROJECT_DIR$/spring_test_demo" />
     <file type="web" url="file://$PROJECT_DIR$/spring_transation" />
     <file type="web" url="file://$PROJECT_DIR$/spring_transation_anno" />
+    <file type="web" url="file://$PROJECT_DIR$/srping_mybatis_multi" />
     <file type="web" url="file://$PROJECT_DIR$/srping_mybatis_quick" />
+    <file type="web" url="file://$PROJECT_DIR$/../spring_mybatis_anno" />
   </component>
   <component name="MavenProjectsManager">
     <option name="originalFiles">
       <list>
         <option value="$PROJECT_DIR$/pom.xml" />
       </list>
-    </option>
-    <option name="ignoredFiles">
-      <set>
-        <option value="$PROJECT_DIR$/spring_transation_anno/pom.xml" />
-        <option value="$PROJECT_DIR$/yg_spring_ioc_anno/pom.xml" />
-      </set>
     </option>
   </component>
   <component name="ProjectRootManager" version="2" languageLevel="JDK_1_8" default="true" project-jdk-name="1.8" project-jdk-type="JavaSDK">
